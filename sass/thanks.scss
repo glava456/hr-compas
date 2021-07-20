@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Cut-the-crap';
+    src: local('Cut-the-crap'),
+        url(../fonts/cut-the-crap.TTF);
+}
+
+@font-face {
+    font-family: 'd_Kallisto';
+    src: local('d_Kallisto'),
+        url(../fonts/d_kallisto.otf);
+}
+
+@font-face {
+    font-family: 'LunchtimeDoublyS';
+    src: local('LunchtimeDoublyS'),
+        url(../fonts/LunchtimeDoublyS.TTF);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@300;400;600;700&display=swap");
+
+/* Теперь можно использовать шрифт */
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "d_Kallisto", sans-serif;
+    line-height: 1.3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    scroll-behavior: smooth;
+    background: url("../image/onboard.png") bottom center no-repeat,
+        url("../image/onboardtop.png") top center no-repeat #0E0E0E;
+    background-size: contain;
+
+
+
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.welcome {
+    max-width: 980px;
+    width: 100%;
+    margin: 290px auto;
+    text-align: center;
+
+    @media screen and (max-width: 980px) {
+        margin: 150px auto 100px;
+        padding: 0 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin: 80px auto;
+
+    }
+
+    &__title {
+        font-family: "d_Kallisto", sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0.05em;
+
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 980px) {
+            font-size: 35px;
+        }
+
+
+
+    }
+
+    &__text {
+        font-family: "d_Kallisto", sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        margin-bottom: 25px;
+
+    }
+
+    &__btn {
+        display: block;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.1);
+        font-family: "d_Kallisto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 28px;
+        padding: 10px 20px;
+        position: relative;
+        border-radius: 50px;
+        z-index: 1;
+        border-bottom: 2px solid #FFFFFF;
+        border-top: 2px solid #FFFFFF;
+        border-left: 10px solid #FFFFFF;
+        border-right: 10px solid #FFFFFF;
+        -webkit-transition: all 0.6s;
+        transition: all 0.6s;
+        background: #FF8212;
+        margin: 0 auto 55px;
+        max-width: 300px;
+
+
+        &:hover {
+            background: #FFFFFF;
+            color: #3D576D;
+        }
+    }
+
+    &__smtext {
+        font-family: "d_Kallisto", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+
+
+        margin: 20px auto 40px;
+
+    }
+
+    &__link {
+        font-family: "d_Kallisto", sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        color: #4AF3F1;
+        margin-bottom: 80px;
+        display: block;
+
+
+    }
+}
+
+.smwidth {
+    max-width: 715px;
+    width: 100%;
+    margin: auto;
+}
